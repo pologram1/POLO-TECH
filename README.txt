@@ -1,7 +1,7 @@
-POLO TECH — EDITORIAL VERSION
+POLO STUDIOS
 
-Upload index.html, about.html, projects.html, contact.html, styles.css, and script.js to the repository root, replacing previous versions. Upload extracted files, not this ZIP.
+Upload index.html, about.html, projects.html, contact.html, styles.css, script.js, and the assets folder to the GitHub repository root. Preserve assets/miguel.jpeg. Replace earlier website files.
 
-Design: cream, black, burnt orange, editorial typography.
-Edit script.js to add contact links.
-The fragrance library is a planned project. Suggested features are ideas, not implemented capabilities. Review profile and skills before publishing.
+Contact setup: edit script.js and replace null values with your email, LinkedIn, GitHub, and resume URL. Contact buttons are hidden until configured. Upload resume.pdf and use "./resume.pdf".
+
+The About page includes your supplied photo, academic background, skills, project references, and career direction. Coursework, planned projects, and career interests are labeled separately. No employment dates, certifications, or project results were invented.
