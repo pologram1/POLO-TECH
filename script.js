@@ -1,5 +1,5 @@
 // Add your actual contact information here. Keep null for missing links.
-const profile = {email: "themiguel10101@gmail.com", linkedin: "https://www.linkedin.com/in/miguel-de-jesus-118569241", github: "https://github.com/pologram1", resume: null};
+const profile = {email: "themiguel10101@gmail.com", linkedin: "https://www.linkedin.com/in/miguel-de-jesus-118569241", github: "https://github.com/pologram1", resume: "./Resume_Miguel_De_Jesus.pdf"};
 document.querySelectorAll('[data-profile]').forEach(link => {
  const name = link.dataset.profile;
  if (!profile[name]) return;
