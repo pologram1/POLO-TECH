@@ -60,3 +60,8 @@ body,header,.card,.strip,.project-feature,.status,.tags li,.button,.theme-toggle
 :root{--weave-light:#ffffff30;--weave-shade:#00000006}:root[data-theme=dark]{--weave-light:#ffffff04;--weave-shade:#00000030}
 header{background-image:repeating-linear-gradient(135deg,transparent 0 4px,var(--weave-light) 4px 8px),repeating-linear-gradient(45deg,var(--weave-shade) 0 4px,transparent 4px 8px)}
 .brand-mark{background:#151719;border-radius:7px;padding:5px}
+
+
+/* Project identities remain legible in both site themes. */
+.project-photo.project-logo{aspect-ratio:3/2;object-fit:contain;object-position:center;background:#f4efe5;padding:12px}
+.feature-image.project-logo{max-height:none}
