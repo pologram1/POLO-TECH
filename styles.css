@@ -56,3 +56,7 @@ body,header,.card,.strip,.project-feature,.status,.tags li,.button,.theme-toggle
 @media(max-width:700px){.carbon-hero:after{background:linear-gradient(0deg,var(--hero-solid) 0%,transparent 75%)}}
 @media(max-width:550px){.nav-actions{gap:12px}.nav-actions nav{gap:12px}.theme-toggle{flex-basis:74px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important}}
+/* Keep the weave quiet on paper and preserve contrast in the monogram. */
+:root{--weave-light:#ffffff30;--weave-shade:#00000006}:root[data-theme=dark]{--weave-light:#ffffff04;--weave-shade:#00000030}
+header{background-image:repeating-linear-gradient(135deg,transparent 0 4px,var(--weave-light) 4px 8px),repeating-linear-gradient(45deg,var(--weave-shade) 0 4px,transparent 4px 8px)}
+.brand-mark{background:#151719;border-radius:7px;padding:5px}
