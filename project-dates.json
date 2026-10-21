@@ -1,0 +1,34 @@
+{
+  "updated": "2026-10-21",
+  "miniAmazon": {
+    "sourceSnapshot": [
+      "2026-04-04",
+      "2026-04-05"
+    ],
+    "snapshotEvidence": "Uploaded MiniAmazon.zip Java file modification times",
+    "repositoryCreated": "2026-10-21",
+    "browserDemoPublished": "2026-10-21",
+    "projectStart": null,
+    "projectFinished": null
+  },
+  "fragranceLibrary": {
+    "firstRepositoryCommit": "2026-10-13",
+    "status": "ongoing",
+    "projectStart": null,
+    "projectFinished": null
+  },
+  "otherResumeProjects": {
+    "MySQL Database Management Project": {
+      "projectStart": null,
+      "projectFinished": null
+    },
+    "Java Casino Simulator & Banking System": {
+      "projectStart": null,
+      "projectFinished": null
+    },
+    "AI Room Redesign & VR Visualization Prototype": {
+      "projectStart": null,
+      "projectFinished": null
+    }
+  }
+}
