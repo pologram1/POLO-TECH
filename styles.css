@@ -63,5 +63,5 @@ header{background-image:repeating-linear-gradient(135deg,transparent 0 4px,var(-
 
 
 /* Project identities remain legible in both site themes. */
-.project-photo.project-logo{aspect-ratio:3/2;object-fit:contain;object-position:center;background:#f4efe5;padding:12px}
+.project-photo.project-logo{height:auto;aspect-ratio:3/2;object-fit:contain;object-position:center;background:#f4efe5;padding:12px}
 .feature-image.project-logo{max-height:none}
