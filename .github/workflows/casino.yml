@@ -1,0 +1,27 @@
+name: Validate casino simulator
+on:
+  push:
+    paths:
+      - 'casino/**'
+      - '.github/workflows/casino.yml'
+  pull_request:
+    paths:
+      - 'casino/**'
+      - '.github/workflows/casino.yml'
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm test --prefix casino
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - run: javac -d /tmp/casino-build casino/java/CasinoGame.java casino/java/CasinoGameTest.java
+      - run: java -cp /tmp/casino-build CasinoGameTest
