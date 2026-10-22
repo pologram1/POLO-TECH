@@ -65,3 +65,5 @@ header{background-image:repeating-linear-gradient(135deg,transparent 0 4px,var(-
 /* Project identities remain legible in both site themes. */
 .project-photo.project-logo{height:auto;aspect-ratio:3/2;object-fit:contain;object-position:center;background:#f4efe5;padding:12px}
 .feature-image.project-logo{max-height:none}
+
+#fras{position:relative}#fras .fras-legacy-anchor{position:absolute;top:0;left:0;scroll-margin-top:100px}.fras-stage-note{border-left:3px solid var(--accent,#bc5a28);padding-left:14px;font-size:.9rem}#fras .concept-notes ol{padding-left:20px}#fras .concept-notes ol li{margin-bottom:12px}
