@@ -57,7 +57,7 @@ public final class CasinoGame {
     public static void main(String[] args) {
         SecureRandom random = new SecureRandom();
         try (Scanner input = new Scanner(System.in)) {
-            System.out.println("POLO CASINO - Virtual credits only. No money or prizes.");
+            System.out.println("CASINO SIMULATOR - Virtual credits only. No money or prizes.");
             System.out.print("Player name: ");
             String name = input.hasNextLine() ? input.nextLine() : "Guest";
             Account account = new Account(name.isBlank() ? "Guest" : name);

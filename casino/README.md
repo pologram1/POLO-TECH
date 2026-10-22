@@ -1,4 +1,8 @@
-# Polo Casino - Casino Simulator & Banking System
+# Casino Simulator
+
+### A Polo Studios Project
+
+![Casino Simulator — A Polo Studios Project](casino-simulator-logo.webp)
 
 A small portfolio project by Miguel A. De Jesus for Polo Studios. Includes a playable browser application and a dependency-free Java console implementation. Created October 21, 2026. This is a newly built portfolio implementation; it does not claim to be the original academic source archive.
 
