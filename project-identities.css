@@ -1,0 +1,7 @@
+/* Transparent project identities shared across portfolio and apps. */
+img.adaptive-logo,img.brand-mark{background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important;padding:0!important;object-fit:contain!important;object-position:center;filter:brightness(0);transition:filter .18s ease}
+:root[data-theme=dark] img.adaptive-logo,:root[data-theme=dark] img.brand-mark{filter:brightness(0) invert(1)}
+.showcase-home>header img.brand-mark,.studio-showcase img.adaptive-logo{filter:brightness(0) invert(1)}
+.showcase-art:has(img.adaptive-logo){background:transparent;border:0;box-shadow:none;transform:none;overflow:visible}
+.showcase-art:has(img.adaptive-logo)::after{display:none}
+@media(prefers-reduced-motion:reduce){img.adaptive-logo,img.brand-mark{transition:none}}
