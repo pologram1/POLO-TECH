@@ -2,7 +2,7 @@ import {records} from './knowledge.js';
 export function normalize(s){return String(s).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/miniamazon/g,'mini amazon').replace(/[^a-z0-9+]/g,' ').replace(/\s+/g,' ').trim();}
 const stop=new Set('a an the i me my you your it its is are was were do does did to of for in on and or can could would should please tell about what how when where with this that them they'.split(' '));
 const tokens=s=>normalize(s).split(' ').filter(t=>t&&!stop.has(t));
-export function topicOf(q){const s=normalize(q);if(/\b(fras|facial|ricardo|raspberry|attendance)\b/.test(s))return 'fras';if(/\b(fragrance|perfume)\b/.test(s))return 'fragrance';if(/\b(amazon|mini|ecommerce|checkout|product|admin)\b/.test(s))return 'mini';if(/\b(casino|blackjack|slots|dice|credits)\b/.test(s))return 'casino';if(/\b(assistant|chatbot)\b/.test(s))return 'assistant';return null;}
+export function topicOf(q){const s=normalize(q);if(/\b(ognetflix|og netflix)\b/.test(s))return 'ognetflix';if(/\b(fras|facial|ricardo|raspberry|attendance)\b/.test(s))return 'fras';if(/\b(fragrance|perfume)\b/.test(s))return 'fragrance';if(/\b(amazon|mini|ecommerce|checkout|product|admin)\b/.test(s))return 'mini';if(/\b(casino|blackjack|slots|dice|credits)\b/.test(s))return 'casino';if(/\b(assistant|chatbot)\b/.test(s))return 'assistant';return null;}
 export function search(q,context='portfolio'){
  const s=normalize(q),ts=tokens(q),explicit=topicOf(q),topic=explicit||context;
  if(/^(hi|hello|hey|hola|help)$/.test(s))return {record:records[0],score:10};

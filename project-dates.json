@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-21",
+  "updated": "2026-10-26",
   "miniAmazon": {
     "sourceSnapshot": [
       "2026-04-04",
@@ -30,5 +30,20 @@
       "projectStart": null,
       "projectFinished": null
     }
+  },
+  "ognetflix": {
+    "sourceSnapshot": [
+      "2026-10-24",
+      "2026-10-25"
+    ],
+    "technicalReport": "2026-10-25",
+    "collaborators": [
+      "Miguel A. De Jesus",
+      "Ricardo J. Lopez Ortiz"
+    ],
+    "status": "academic-project",
+    "projectStart": null,
+    "projectFinished": null,
+    "snapshotEvidence": "Uploaded OGNETFLIX source package and technical report"
   }
 }
