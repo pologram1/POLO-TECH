@@ -1,0 +1,14 @@
+name: Validate portfolio
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check theme and assistant behavior
+        run: node --test theme.test.js assistant/tests/*.test.js
