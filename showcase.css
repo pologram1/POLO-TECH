@@ -11,3 +11,19 @@
 @media(prefers-reduced-motion:reduce){.showcase-slide{transition:none}.studio-showcase *{animation:none!important}}
 /* Clip artwork without creating a scroll container around focused controls. */
 .studio-showcase{overflow:clip}
+/* The chosen artwork already contains the title. Keep one semantic h1 for
+   assistive technology, and place the working links below the image lettering. */
+.showcase-intro .showcase-cover{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:-1}
+.showcase-intro::before{z-index:0;background:linear-gradient(180deg,#080b0d55,transparent 22%,transparent 52%,#080b0dc9 83%,#080b0ded)}
+.showcase-intro::after,.showcase-intro .showcase-rule{display:none}
+.showcase-intro .showcase-inner{align-self:flex-end;margin:0 auto;z-index:1}
+.showcase-intro .showcase-copy{animation:none!important}
+.showcase-intro .showcase-eyebrow{color:#f7ddba;margin-bottom:8px;font-size:10px}
+.showcase-intro .showcase-tagline{font-size:clamp(18px,2vw,25px);margin-bottom:6px}
+.showcase-intro .showcase-description{color:#eee5d9;font-size:14px}
+.showcase-intro .actions{margin-top:17px}
+.showcase-intro .button{background:#171411aa;backdrop-filter:blur(8px)}
+.showcase-intro .button.primary{background:#efcf9e;border-color:#efcf9e;color:#251b12}
+.showcase-intro .button.primary:hover{background:#ffe5bd}
+@media(max-width:800px){.showcase-intro .showcase-cover{top:100px;height:calc(100% - 220px);object-fit:cover}.showcase-intro::before{background:linear-gradient(180deg,#080b0d8c,transparent 22%,transparent 42%,#080b0deb 72%,#080b0d)}.showcase-intro .showcase-description{max-width:42ch}}
+@media(max-width:450px){.showcase-intro .showcase-cover{top:135px;height:380px}.showcase-intro::before{background:linear-gradient(180deg,#080b0d50,transparent 22%,transparent 43%,#080b0df2 58%,#080b0d 78%)}.showcase-intro .showcase-tagline{font-size:21px;max-width:29ch}.showcase-intro .showcase-eyebrow{letter-spacing:.14em}.showcase-intro .showcase-inner{margin-bottom:40px}}
