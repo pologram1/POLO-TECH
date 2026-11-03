@@ -27,3 +27,30 @@
 .showcase-intro .button.primary:hover{background:#ffe5bd}
 @media(max-width:800px){.showcase-intro .showcase-cover{top:100px;height:calc(100% - 220px);object-fit:cover}.showcase-intro::before{background:linear-gradient(180deg,#080b0d8c,transparent 22%,transparent 42%,#080b0deb 72%,#080b0d)}.showcase-intro .showcase-description{max-width:42ch}}
 @media(max-width:450px){.showcase-intro .showcase-cover{top:135px;height:380px}.showcase-intro::before{background:linear-gradient(180deg,#080b0d50,transparent 22%,transparent 43%,#080b0df2 58%,#080b0d 78%)}.showcase-intro .showcase-tagline{font-size:21px;max-width:29ch}.showcase-intro .showcase-eyebrow{letter-spacing:.14em}.showcase-intro .showcase-inner{margin-bottom:40px}}
+
+/* Preserve the complete cover and let the tallest slide size the mobile stage. */
+@media(max-width:800px){
+  .showcase-home>header{position:relative;background:#111213}
+  .studio-showcase{height:auto;min-height:0}
+  .showcase-stage{display:grid;height:auto}
+  .showcase-slide{position:relative;inset:auto;grid-area:1/1;min-width:0;padding:32px 0;align-items:center}
+  .showcase-project .showcase-inner{grid-template-columns:minmax(0,1fr);gap:24px}
+  .showcase-copy{min-width:0}
+  .showcase-art{width:min(440px,100%);height:auto;max-height:none;aspect-ratio:1280/853;transform:none}
+  .showcase-art img{animation:none!important;object-fit:contain}
+  .showcase-intro{flex-direction:column;justify-content:center;gap:24px;padding-top:0}
+  .showcase-intro .showcase-cover{position:relative;inset:auto;z-index:auto;display:block;width:100%;height:auto;aspect-ratio:1672/941;object-fit:contain}
+  .showcase-intro::before{display:none}
+  .showcase-intro .showcase-inner{align-self:auto;margin:0 auto}
+  .showcase-controls{position:relative;inset:auto;margin:0 auto;padding:18px 0 24px;flex-wrap:wrap;gap:12px}
+  .showcase-tabs{min-width:0;max-width:none}
+  .showcase-tabs button{flex:1;min-width:20px;min-height:44px}
+  .showcase-actions{margin-left:auto}
+  .showcase-actions button{width:44px;height:44px}
+  .studio-showcase .button{max-width:100%;white-space:normal}
+}
+@media(max-width:380px){
+  .showcase-controls{column-gap:8px}
+  .showcase-tabs{flex-basis:calc(100% - 60px)}
+  .showcase-project h2{font-size:clamp(30px,9vw,37px)}
+}
